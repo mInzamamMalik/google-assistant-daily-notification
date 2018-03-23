@@ -1,0 +1,44 @@
+{
+  "id": "dd0b7a98-24d3-4f50-a3c5-b74b8fd61797",
+  "name": "set_medication_reminder",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "actions.intent.CONFIGURE_UPDATES",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "db50bb16-8bd1-4d67-b6bd-c42c06a3f6fa",
+          "required": true,
+          "dataType": "@notification-category",
+          "name": "notification-category",
+          "value": "$notification-category",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "what did you want to remind? is it about your medication"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "something went wrong"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1521816925,
+  "fallbackIntent": false,
+  "events": []
+}

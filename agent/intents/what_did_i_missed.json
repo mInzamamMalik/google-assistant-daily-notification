@@ -1,0 +1,50 @@
+{
+  "id": "bfbaa0f2-9783-4bae-a3b4-42e51165bb4f",
+  "name": "what_did_i_missed",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "whatMissed",
+      "affectedContexts": [
+        {
+          "name": "what_did_i_missed-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "ff58e002-521e-4ed2-ab77-fe5a635872f8",
+          "required": true,
+          "dataType": "@boolean",
+          "name": "boolean",
+          "value": "$boolean",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "did you take your medication?"
+            }
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": "something went wrong"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1521819927,
+  "fallbackIntent": false,
+  "events": []
+}

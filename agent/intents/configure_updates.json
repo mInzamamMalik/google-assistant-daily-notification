@@ -1,0 +1,33 @@
+{
+  "id": "213b96e8-c384-4749-b124-2985196094a6",
+  "name": "configure_updates",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1521811875,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "action_intent_CONFIGURE_UPDATES"
+    }
+  ]
+}

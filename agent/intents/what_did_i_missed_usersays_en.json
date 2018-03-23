@@ -1,0 +1,36 @@
+[
+  {
+    "id": "3b2e8a38-912c-45f0-a69c-f996e72bc8dc",
+    "data": [
+      {
+        "text": "no i ",
+        "userDefined": false
+      },
+      {
+        "text": "didnt",
+        "alias": "boolean",
+        "meta": "@boolean",
+        "userDefined": false
+      },
+      {
+        "text": " take my medication",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1521813286
+  },
+  {
+    "id": "b3d941f5-3bbd-4edf-b159-f78fba8012ad",
+    "data": [
+      {
+        "text": "what did i missed",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1521813286
+  }
+]

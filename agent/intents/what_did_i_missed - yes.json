@@ -1,0 +1,33 @@
+{
+  "id": "ff5a4ae5-1d9b-457a-bfd6-ecca0f6f62eb",
+  "parentId": "bfbaa0f2-9783-4bae-a3b4-42e51165bb4f",
+  "rootParentId": "bfbaa0f2-9783-4bae-a3b4-42e51165bb4f",
+  "name": "what_did_i_missed - yes",
+  "auto": true,
+  "contexts": [
+    "what_did_i_missed-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "what_did_i_missed.what_did_i_missed-yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1521821333,
+  "fallbackIntent": false,
+  "events": []
+}

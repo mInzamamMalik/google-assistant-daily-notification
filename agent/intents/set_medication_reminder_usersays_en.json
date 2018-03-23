@@ -1,0 +1,73 @@
+[
+  {
+    "id": "464186f7-ae36-4593-8cf4-daf5f9b6ce88",
+    "data": [
+      {
+        "text": "give me notification",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1521811395
+  },
+  {
+    "id": "ec1fe8b7-8182-4cc0-b2d4-646fbbdc59a6",
+    "data": [
+      {
+        "text": "remind me about ",
+        "userDefined": false
+      },
+      {
+        "text": "medicine",
+        "alias": "notification-category",
+        "meta": "@notification-category",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1521810756
+  },
+  {
+    "id": "e4a1330f-e22a-47b0-b611-5bddefe41ed5",
+    "data": [
+      {
+        "text": "send me daily updates for ",
+        "userDefined": false
+      },
+      {
+        "text": "random",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1521810756
+  },
+  {
+    "id": "f7997e6d-ae89-4f2d-9cc4-40cd9bee39e7",
+    "data": [
+      {
+        "text": "send me daily updates",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1521810756
+  },
+  {
+    "id": "bf9d2df2-8155-4882-afb8-993d882c2672",
+    "data": [
+      {
+        "text": "Send daily",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1521810756
+  }
+]
