@@ -45,7 +45,7 @@ function configureUpdates(app) {
     console.log("#####  INTENT: ", intent);
     const category = app.getArgument('notification-category');
     console.log("#####  category: ", category);
-    app.askToRegisterDailyUpdate('set_medication_reminder', [{ name: "some name", textValue: "some text" }]);
+    app.askToRegisterDailyUpdate('what_did_i_missed', [{ name: "some name", textValue: "some text" }]);
 }
 // Confirm outcome of opt-in for daily updates.
 function finishUpdateSetup(app) {

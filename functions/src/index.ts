@@ -64,7 +64,7 @@ function configureUpdates(app) {
   console.log("#####  category: ", category);
 
   app.askToRegisterDailyUpdate(
-    'set_medication_reminder',
+    'what_did_i_missed',
     [{name: "some name", textValue: "some text"}]
   );
 }
