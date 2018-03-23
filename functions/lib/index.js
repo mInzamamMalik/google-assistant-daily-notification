@@ -22,8 +22,9 @@ exports.webhook = functions.https.onRequest((request, response) => {
         const actionMap = new Map();
         actionMap.set(app.StandardIntents.CONFIGURE_UPDATES, configureUpdates);
         actionMap.set(Actions.FINISH_UPDATE_SETUP, finishUpdateSetup);
-        actionMap.set("whatMissed", whatMissed);
         actionMap.set("welcome", welcome);
+        actionMap.set("whatMissed", whatMissed);
+        actionMap.set("what_did_i_missed.what_did_i_missed-yes", whatMissed_yes);
         app.handleRequest(actionMap);
     }
     catch (e) {
@@ -34,9 +35,9 @@ function welcome(app) {
     app.ask(app.buildRichResponse()
         .addSimpleResponse({
         speech: `<speak>
-            <s> wellcome to chatbot </s>
+            <s> Hi, I'm you medication assistant </s>
         </speak>`
-    }).addSuggestions('Send daily'));
+    }));
 }
 // Start opt-in flow for daily updates
 function configureUpdates(app) {
@@ -51,10 +52,10 @@ function configureUpdates(app) {
 function finishUpdateSetup(app) {
     console.log("====>> finish triggered");
     if (app.isUpdateRegistered()) {
-        app.tell("Ok, I'll start giving you daily updates.");
+        app.tell("Ok, I'll start giving you notification that time.");
     }
     else {
-        app.tell("Ok, I won't give you daily updates.");
+        app.tell("something went wrong when i was scheduling up notification");
     }
 }
 // # NOTE
@@ -68,7 +69,10 @@ function whatMissed(app) {
         app.tell("Ok, good job. keep it up!");
     }
     else {
-        app.tell("ask to set reminder again if you want to remind me again");
+        app.ask("would you like me to remind you again?");
     }
+}
+function whatMissed_yes(app) {
+    app.askToRegisterDailyUpdate('what_did_i_missed', [{ name: "some name", textValue: "some text" }]);
 }
 //# sourceMappingURL=index.js.map
